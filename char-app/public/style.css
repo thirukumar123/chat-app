@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Login Page Styles */
+  #login-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  #login-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #login-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  #login-form button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #login-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Chat Page Styles */
+  #chat-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+  
+  #chat-container h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #user-display {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+  
+  #messages li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    max-width: 75%;
+  }
+  
+  #messages li.own {
+    background-color: #d1f7c4;
+    margin-left: auto;
+    text-align: right;
+    border-radius: 12px 12px 0 12px;
+  }
+  
+  #messages li.other {
+    background-color: #f7c4c4;
+    margin-right: auto;
+    text-align: left;
+    border-radius: 12px 12px 12px 0;
+  }
+  
+  #chat-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #chat-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  #chat-form button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #chat-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #login-container, #chat-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #login-form input,
+    #login-form button,
+    #chat-form input,
+    #chat-form button {
+      font-size: 14px;
+    }
+  
+    #messages li {
+      font-size: 12px;
+    }
+  }
+  
